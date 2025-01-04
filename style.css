@@ -1,0 +1,1294 @@
+/* WebSite Name: Bhramanam
+   Made by: Ritesh Gorle
+   Created: Jan 2025
+   Content: Tour Agency
+*/
+
+/*****************************************
+Table Of Contents:
+
+00. BASIC CSS Style
+SECTION 01: LOGO AND NAVIGATIONS
+SECTION 02: CENTER IMAGE TEXT
+SECTION 03: SERVICES
+SECTION 04: SERVICES INCLUDE
+SECTION 05: DESTINATION
+SECTION 06: NUMBERS
+SECTION 07: BANNER
+SECTION 08: ABOUT AND OWNER
+SECTION 09: OFFERS
+SECTION 10: TESTIMONIAL
+SECTION 11: CONTACT US
+SECTION 12: GALLERY
+SECTION 13 : FOOTER
+******************************************/
+
+
+/******************************/
+/*   00. BASIC CSS Style      */
+/******************************/   
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #e6ffe6;
+            color: #333;
+        }
+
+
+
+
+/******************************/
+/*  01. LOGO AND NAVIGATIONS   */
+/******************************/   
+.navbar-brand{
+    text-decoration: none;
+    font-size: 34px;
+    color:  #000000;
+    font-family: 'Mogra';
+}
+
+
+.navbar-brand:hover{
+    
+    color:  red;
+    
+}
+
+
+.nav-item{
+    padding: 20px;   
+}
+
+
+.nav-link{
+color: black;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Marko One';
+    text-shadow: 2px 2px 5px red;
+}
+
+
+.nav-link:hover{
+color: red;
+    text-shadow: none;
+}
+
+
+
+@media (max-width: 768px) {
+        nav {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 20px;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            
+
+            .hero h1 {
+                font-size: 3rem;
+                
+            }
+
+            .services {
+                padding: 40px 10px;
+            }
+
+            .service-item {
+                flex: 1 1 100%;
+            }
+        }
+
+
+
+
+
+/******************************/
+/*  02. CENTER IMAGE TEXT     */
+/******************************/   
+      .Center-IMG-Text {
+            text-align: center;
+            padding: 100px 20px;
+            background-image: url('new bg.jpg') ;
+            background-size: cover;
+            background-position: center;
+         }
+
+
+        .Center-IMG-Text h1 {
+            font-size: 4.5rem;
+            margin-bottom: 5px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+            color: #ff0000;
+            font-weight: 300;
+            font-family: 'Metal Mania';
+        }
+
+
+        .Center-IMG-Text p {
+            font-size: 1.6rem;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+            margin-bottom: 5px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .Center-IMG-Text button {
+            padding: 15px 30px;
+            background: red;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.4s;
+        }
+
+        .Center-IMG-Text button:hover {
+            background: black;
+            transform: scale(1.1);
+            color: white;
+            border: 2px solid white;
+        }
+
+@media (max-width: 768px) {
+ 
+.Center-IMG-Text h1 {
+            font-size: 3.5rem;
+            
+        }
+
+.Center-IMG-Text p {
+            font-size: 1.3rem;
+            
+        }
+
+}
+
+
+/******************************/
+/*        03. SERVICES        */
+/******************************/  
+        .services {
+            padding: 70px 20px;
+            background: #e6ffe6;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: black;
+            font-weight: 600;
+            position: relative;
+             font-family: 'Cinzel Decorative';
+        }
+
+        .services h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #4facfe;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .service-item {
+            flex: 1 1 calc(30% - 40px);
+            min-width: 280px;
+            background: black;
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-item:hover {
+            background:white;
+            color: black;
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            border: 3px solid black;
+        }
+
+        .service-item h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            color: #cc9900;
+            font-family: 'Marko One';
+        }
+
+
+
+
+/******************************/
+/*   04. SERVICES INCLUDE     */
+/******************************/         
+.Service-include {
+    margin-bottom: 50px;
+}
+
+.Service-include h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+     font-family: 'Cinzel Decorative';
+}
+
+
+.Service-include-Box{
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+.Service-include-Box .Service-include-Box-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 auto 45px;
+   
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    z-index: 1;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+
+.Service-include-Box .Service-include-Box-icon span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    color: rgba(0,0,0,0.8);
+}
+
+.Service-include-Box .Service-include-Box-icon span i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Service-include-Box .NEW-title{
+    font-size: 26px;
+    color: #b38600;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    font-family: 'Marko One';
+}
+.Service-include-Box .Data{
+    font-size: 17px;
+    color: #555;
+    padding: 0 10px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+     .Service-include h2 {
+    font-size: 2.6rem;
+    
+}   
+
+
+}
+
+
+/******************************/
+/*     05. DESTINATIONS       */
+/******************************/  
+
+#Destinations {
+    padding: 50px 20px;
+    text-align: center;
+    background: #99ff99;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.section-heading {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Marko One';
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card Styling */
+.card {
+    background: black;
+    color: white;
+    border-radius: 15px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    background: white;
+    color: black;
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid black;
+}
+
+/* Image Styling */
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Text Styling */
+.card-title {
+    font-size: 1.6rem;
+    color: #cc9900;
+    margin: 15px 0;
+    font-family: 'Marko One';
+
+}
+
+.card-description {
+    font-size: 1rem;
+    
+    margin-bottom: 20px;
+}
+
+
+
+/* Button Styling */
+.card-btn {
+    padding: 10px 20px;
+    background: #cc9900;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.card-btn:hover {
+    background: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-heading {
+        font-size: 2rem;
+    }
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-heading {
+        font-size: 1.8rem;
+    }
+    .card-title {
+        font-size: 1.5rem;
+    }
+    .card-description {
+        font-size: 0.9rem;
+    }
+    .card-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+
+/******************************/
+/*        06. NUMBERS        */
+/******************************/  
+.numbers{
+    font-size: 3rem;
+    font-weight: 600;
+            margin-bottom: 20px;
+            color: black;
+            position: relative;
+             font-family: 'Cinzel Decorative';
+}
+
+@keyframes growProgressBar {
+  0%, 33% { --pgPercentage: 0; }
+  100% { --pgPercentage: var(--value); }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+.cir[role="progressbar"] {
+  --size: 12rem;
+  --fg: red;
+  --bg: black;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 2s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    ;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: red;
+}
+
+.cir[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+}
+
+
+
+
+/******************************/
+/*        07. BANNER         */
+/******************************/  
+.Banner-section {
+    height: 200px;
+    background: linear-gradient( to bottom, 
+        rgba(0,0,0, .4),
+        rgba(0,0,0,.6)),
+        url('banner.jpeg');
+        background: cover;
+        border-radius: 10% 30% / 10% 40%;
+    color: #ffbf00;
+    text-align: center;
+    padding-top: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.Banner-section h2 {
+    font-size: 3em;
+    font-family: 'Marko One';
+}
+
+@media (max-width: 768px) {
+    
+.Banner-section h2 {
+    font-size: 2em;
+    font-family: 'Marko One';
+}
+
+}
+
+
+
+
+/******************************/
+/*   08. ABOUT AND OWNER      */
+/******************************/  
+.title{
+    font-size:3em;
+    color:black;
+    display:block;
+    font-family: 'Cinzel Decorative';
+    font-weight: 600;
+    }
+    
+    
+    
+    .btn1{
+    padding:10px 20px;
+    background:black;
+    border:2px solid white;
+    color:white;
+    border-radius:3px;
+    outline:none;
+    transition:0.5s;
+    text-decoration: none;
+    }
+    
+    .btn1:hover{
+    background:white;
+    color:black;
+    border:2px solid black;
+    text-decoration: none;
+    }
+    
+    .btn2{
+    padding:10px 20px;
+    border-radius:3px;
+    background:#cc9900;
+    border:2px solid black;
+    color:white;
+    outline:none;
+    transition:0.5s;
+    }
+    
+    .btn2:hover{
+    background:black;
+    color:white;
+    text-decoration: none;
+    }
+    
+    
+    
+    a{
+    text-decoration:none;
+    }
+    
+    .ABOUT-OWNER-section2,.ABOUT-OWNER-section3{
+    width:90%;
+    margin:5% 0%;
+    margin-left:auto;
+    margin-right:auto;
+    }
+    
+    .ABOUT-OWNER-section2 table,.ABOUT-OWNER-section3 table{
+    width:100%;
+    }
+    
+    .ABOUT-OWNER-section2 table td,.ABOUT-OWNER-section3 table td{
+    width:50%;
+    }
+    
+    .ABOUT-OWNER-section2 table td img,.ABOUT-OWNER-section3 table td img{
+    width:70%;
+    height:50%;
+    border-radius: 40px;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    .ABOUT-OWNER-section3 table td img{
+    float:right;
+    }
+    
+    
+    @media (max-width:720px){
+    .ABOUT-OWNER-section2 table td, .ABOUT-OWNER-section3 table td{
+    width:100%;
+    display:block;
+    }
+    .ABOUT-OWNER-section3 table td img{
+    float:none;
+    margin-top:4%;
+    }
+    .ABOUT-OWNER-section2 table td img,.ABOUT-OWNER-section3 table td img{
+    width:100%;
+    height:60%;
+    }
+    }
+
+@media (max-width:300px){
+  .ABOUT-OWNER-section2,.ABOUT-OWNER-section3{
+    font-size:12px;
+  }
+  .ABOUT-OWNER-section3 table td img{
+    float:none;
+    margin-top:8%;
+    }
+  .btn1,.btn2{
+    padding:5px 10px;
+  }
+}
+
+
+
+/******************************/
+/*          09. OFFERS       */
+/******************************/  
+
+.offers-section {
+    padding: 50px 20px;
+    background: #99ff99;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.section-heading {
+    font-size: 3rem;
+    color: black;
+   font-family: 'Metal Mania';
+   font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeInDown 1s ease;
+}
+
+/* Offers Container */
+.offers-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Offer Card */
+.offer-card {
+    background: black;
+    color: white;
+    border-radius: 140px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 20px;
+    flex: 1 1 22%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+.offer-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #cc9900;
+    font-family: 'Marko One';
+}
+
+.offer-card p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.offer-card:hover {
+    background: white;
+    color: black;
+    transform: translateY(-15px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid black;
+}
+
+/* Active State */
+.offer-card.active {
+    border: 2px solid #ff7e5f;
+    transform: translateY(-20px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+.btn3{
+    padding:7px 16px;
+    border-radius:30px;
+    background: #cc9900;
+    border:2px solid #cc9900;
+    color:#fff;
+    outline:none;
+    transition:0.5s;
+    }
+    
+    .btn3:hover{
+    background:black;
+    color:white;
+    text-decoration: none;
+    }
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .offers-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-card {
+        width: 90%;
+    }
+}
+
+
+
+
+
+/******************************/
+/*      10. TESTIMONIAL       */
+/******************************/  
+
+.test{
+    margin-top: 10px;
+    font-size: 3rem;
+            color: black;
+            position: relative;
+      font-weight: 600;
+     font-family: 'Cinzel Decorative';
+}
+
+
+.sub{
+         font-size: 1rem;
+            color: black;
+            font-family: 'Marko One';
+}
+
+
+
+.NEW-slideshow-container {
+  position: relative;
+  
+}
+
+/* Slides */
+.NEW-mySlides {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.NEW-mySlides img {
+    width: 230px;
+    height: 320px;
+    border-radius: 30px;
+    border: 3px black;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #66ff33;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  text-decoration: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  text-decoration: none;
+  color: #ffbf00;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 00px;
+   
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #66ff33;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {
+    font-size: 20px;
+    font-weight: 600;
+    color: #cc9900;}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .test{
+    
+    font-size: 2rem;
+            
+}
+
+}
+
+
+
+
+/******************************/
+/*      11. CONTACT US       */
+/******************************/  
+.contact-us {
+    padding: 50px 20px;
+    background: #99ff99;
+    color: white;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 3rem;
+    margin-bottom: 30px;
+     font-family: 'Metal Mania';
+     font-weight: ;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+/* Contact Card */
+.contact-card {
+    background: black;
+    color: white;
+    border-radius: 15px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 20px;
+    flex: 1 1 30%;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    background: white;
+    color: black;
+}
+
+/* Subheading */
+.sub-heading {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #e6ac00;
+    font-family: 'Marko One';
+
+}
+
+/* Inquiry Form Styling */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: #e6ac00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+
+    background: black;
+}
+
+
+
+.customer-support-mail{
+    font-size: 18px;
+}
+
+
+/* Fancy Dividers */
+.contact-card:after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+
+
+
+
+/******************************/
+/*        12. GALLERY         */
+/******************************/  
+.Gal-Heading{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: black;
+    font-family: 'Cinzel Decorative';
+}
+
+
+.Gal-Sub-Heading{
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Marko One' ;
+    
+}
+
+
+div.NEW-gallery {
+  border: 2px solid black;
+  border-radius: 30px;
+  background: black;
+  color: white;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+div.NEW-gallery:hover {
+  border: 1px solid #777;
+  background: white;
+  color: black;
+}
+
+div.NEW-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.NEW-responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .NEW-responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .NEW-responsive {
+    width: 100%;
+  }
+}
+
+
+
+/******************************/
+/*        13. FOOTER         */
+/******************************/  
+        .Footer
+        {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            padding-top: 20px;
+            width: 100%;
+            height: 400px;
+            
+
+            
+        }
+        .Footer-heading
+        {
+            height: fit-content;
+           font-family: 'Mogra';
+            margin: auto;
+            font-size: 40px;
+        }
+        .Footer-content
+        {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            margin: auto;
+        }
+        .Footer-bottom
+        {
+            margin: auto;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .Footer-bottom-sec
+        {
+
+            margin: auto;
+        }
+        .Footer-bottom-sec p
+        {
+            font-family: 'Metal Mania';
+            font-size: 30px;
+
+        
+            color: #0a0a0a;
+        }
+        .Footer-bottom-sec p:hover
+        {
+            font-weight: 700;
+        }
+        .Footer-section
+        {
+            margin: auto;
+        }
+
+        .social-ico{
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+
+        .d-footer-ul
+        {
+            list-style: none;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .d-footer-li
+        {
+            margin-bottom: 5px;
+            color: black;
+        }
+        .d-footer-li:hover
+        {
+            cursor: pointer;
+            transform: translateX(10px);
+            transition: all 0.4s;
+            font-weight: 700;
+            color: red;
+        }
+        .d-footer-li-h
+        {    
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+
+        .d-footer-li-h-11{
+          text-decoration: none;
+          color: black;
+
+        }
+
+
+        .d-footer-li-h-11:hover{
+          text-decoration: none;
+          color: red;
+
+        }
+
+
+        .logo
+        {
+            max-width: 120px;
+            max-height: 120px;
+            display: flex;
+            margin: auto;
+           margin-top: 10px;
+        }
+        .logo-head
+        {
+            font-family: 'Josefin Sans', sans-serif;
+            margin: auto;
+            display: flex;
+        }
+        .logo a
+        {
+            margin: auto;
+            max-width: 100%;
+        }
+
+        @media only screen and (max-width: 900px) 
+        {
+            .Footer
+            {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                padding-top: 30px;
+                width: 100%;
+                height: fit-content;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: bottom;
+                
+              
+            }
+            .Footer-heading
+            {
+                height: fit-content;
+                font-family: 'Rammetto One', cursive;
+                margin: auto;
+                font-size: 30px;
+            }
+            .Footer-content
+            {
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+            }
+            .Footer-bottom
+            {
+                margin: auto;
+                margin-bottom: 0px;
+                height: 20%;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+            .logo-head b
+            {
+                font-family: 'Josefin Sans', sans-serif;
+                margin: auto;
+                text-align: center;
+            } 
+            .d-footer-ul
+            {
+                list-style: none;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+            .d-footer-li
+            {
+                margin-bottom: 5px;
+                margin-left: -40px;
+                text-align: center;
+            }
+            .d-footer-li-h
+            {
+                margin-bottom: 10px;
+                margin-left: -40px;
+                text-align: center;
+            }
+        }
+
