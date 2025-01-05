@@ -53,6 +53,9 @@ SECTION 13 : FOOTER
 }
 
 
+
+
+
 .navbar-brand:hover{
     
     color:  red;
@@ -86,7 +89,7 @@ color: red;
                 display: none;
                 flex-direction: column;
                 gap: 10px;
-                background: rgba(255, 255, 255, 0.9);
+                background: #e6ffe6;
                 padding: 20px;
                 position: absolute;
                 top: 100%;
@@ -94,6 +97,14 @@ color: red;
                 width: 100%;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }
+
+
+.navbar-brand{
+    text-decoration: none;
+    font-size: 46px;
+    
+}
+
 
             nav.active {
                 display: flex;
@@ -103,7 +114,9 @@ color: red;
                 display: block;
             }
 
-            
+            #logo11{
+                width: 180px;
+            }
 
             .hero h1 {
                 font-size: 3rem;
